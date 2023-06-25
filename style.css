@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background: url('blob-background.png')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Styling for the Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Styling for the container */
+.container {
+  margin: 0 2.5%;
+}
+
+
+/* Styling for the Header Section */
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 50px 0;
+}
+
+.brand-name {
+  width: 350px;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15px );
+  -webkit-backdrop-filter: blur( 15px );
+  border-radius: 50px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.brand-name img {
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50px;
+  float: left;
+}
+
+.brand-name p {
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+/* Styling for the Socials */
+.all-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.socials {
+  width: 380px;
+  padding: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.548);
+  border: 3px solid #7935FF;
+  border-radius: 10px;
+}
+
+.socials:nth-child(4), .socials:nth-child(5) {
+  margin-bottom: 40px;
+}
+
+.icon-and-social {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.link {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+}
+
+i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+button, .soon {
+  width: 130px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-weight: 700;
+  background-image: linear-gradient(to right bottom, #7935ff, #8547ff, #9057ff, #9a66ff, #a475ff);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.soon {
+  background-image: linear-gradient(to right bottom, #8b8b8b, #838383, #7b7b7b, #737373, #6b6b6b);
+}
+
+button:hover {
+  scale: 1.05;
+}
+
+/* Media Query */
+@media only screen and (max-width:  1252px) {
+  .socials:nth-child(4) {
+    margin-bottom: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 827px) {
+  .header {
+    margin: 30px 0;
+  }
+  
+  .socials {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .brand-name {
+    width: 90%;
+  }
+
+  .brand-name p {
+    font-size: 20px;
+  }
+
+  .link {
+    font-size: 25px;
+  }
+
+  i {
+    font-size: 35px;
+    margin-right: 10px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  button a{
+    font-size: 12px;
+  }
+
+  button, .soon {
+    width: 120px;
+  }
+}
